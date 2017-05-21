@@ -1,4 +1,3 @@
-<main>
-<h1>hejfoianfioafiafoia</h1>
-
-</main>
+<?php
+  get_header();
+ ?>

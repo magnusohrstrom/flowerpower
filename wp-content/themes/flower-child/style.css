@@ -17,12 +17,32 @@
 /*Mixin for animation on contact page*/
 /*Mixin for hide & show*/
 footer #colophon, #colophon > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   background-color: black;
   z-index: 1000;
   width: 100%; }
+  footer #colophon a, #colophon > div a {
+    color: white; }
 
 h1, h2, h3, h4, h5, a, label, .header-title, .likeP {
   letter-spacing: 0.15em; }
