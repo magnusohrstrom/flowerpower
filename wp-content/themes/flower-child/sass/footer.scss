@@ -1,0 +1,8 @@
+footer #colophon, #colophon > div {
+  position: fixed;
+  bottom:0;
+  left: 0;
+  background-color:black;
+  z-index: 1000;
+  width: 100%;
+}

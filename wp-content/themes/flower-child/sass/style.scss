@@ -1,0 +1,84 @@
+/*
+ Theme Name:   flower-child
+ Theme URI:    http://example.com/flower-power/
+ Description:  flower-power Child Theme
+ Author:       magnus
+ Author URI:   http://example.com
+ Template:     flower-power
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  flower-power-child
+*/
+@import "varmix";
+@import "footer";
+
+//Typography
+h1,h2,h3,h4,h5, a, label, .header-title, .likeP {
+
+letter-spacing: 0.15em;
+}
+
+p{
+  letter-spacing: 0.15em;
+}
+a {
+  text-decoration: none;
+  //color:transparent;
+  z-index: 1000;
+  &:hover {
+    text-decoration: none;
+
+  }
+}
+
+//Main Elements
+body {
+  background: $grey;
+}
+
+main {
+  margin: 0 3em 0 3em;
+  //background: white;
+}
+
+
+
+#masthead {
+  @include flexbox();
+  @include justify-content(center);
+  @include flex-direction(column);
+  @include align-items(center);
+  position: fixed;
+  right:0;
+  top:0;
+  height: 100vh;
+  width: 12em;
+  background: $cobolt;
+  text-align: center;
+
+    & #primary-menu > ul{
+
+      @include breakpoint(xxlarge){
+        @include flexbox();
+        @include justify-content(space-between);
+        @include flex-direction(column);
+        @include align-items(flex-start);
+      };
+      @include flexbox();
+      @include justify-content(space-between);
+      @include flex-direction(column);
+      @include align-items(flex-start);
+        height: 50vh;
+        & a {
+          margin:2em;
+          color: white;
+        }
+    }
+
+
+}
+
+#siten-avigation {
+
+}

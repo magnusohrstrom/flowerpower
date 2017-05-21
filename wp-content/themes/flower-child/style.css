@@ -1,0 +1,115 @@
+/*
+ Theme Name:   flower-child
+ Theme URI:    http://example.com/flower-power/
+ Description:  flower-power Child Theme
+ Author:       magnus
+ Author URI:   http://example.com
+ Template:     flower-power
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  flower-power-child
+*/
+/*------------- Breakpoints mixin*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+/*---------------Mixins for transforms, transitions and animations*/
+/*Mixin for animation on contact page*/
+/*Mixin for hide & show*/
+footer #colophon, #colophon > div {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1000;
+  width: 100%; }
+
+h1, h2, h3, h4, h5, a, label, .header-title, .likeP {
+  letter-spacing: 0.15em; }
+
+p {
+  letter-spacing: 0.15em; }
+
+a {
+  text-decoration: none;
+  z-index: 1000; }
+  a:hover {
+    text-decoration: none; }
+
+body {
+  background: #D8D8DA; }
+
+main {
+  margin: 0 3em 0 3em; }
+
+#masthead {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 12em;
+  background: #8EA5DC;
+  text-align: center; }
+  #masthead #primary-menu > ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    height: 50vh; }
+    @media (max-width: 1440px) {
+      #masthead #primary-menu > ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: space-between;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        -ms-align-items: flex-start;
+        align-items: flex-start; } }
+    #masthead #primary-menu > ul a {
+      margin: 2em;
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */
