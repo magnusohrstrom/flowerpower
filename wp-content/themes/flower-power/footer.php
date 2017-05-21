@@ -15,12 +15,13 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			
+
 			<span class="sep"> | </span>
+			<a href="#">copyright Flower Power</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-<a href="#">copyright Flower Power</a>
+
 
 
 </body>

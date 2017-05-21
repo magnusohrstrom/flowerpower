@@ -12,4 +12,21 @@ function my_theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
+add_filter( 'flower-power_post_meta', 'remove_post_meta_home_page' );
+function remove_post_meta_home_page($post_meta) {
+if ( is_home() ) {
+	$post_meta = '';
+	return $post_meta;
+}};
+
+add_filter( 'flower-power_post_info', 'remove_post_info_home_page' );
+function remove_post_info_home_page($post_info) {
+if ( is_home() ) {
+	$post_info = '';
+	return $post_info;
+}};
+remove_action( 'flower-power_entry_header', 'flower-power_post_info', 12 );
+remove_action( 'flower-power_entry_footer', 'flower-power_post_meta' );
+
 ?>

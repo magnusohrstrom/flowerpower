@@ -1,8 +1,15 @@
 footer #colophon, #colophon > div {
+  @include flexbox();
+  @include justify-content(center);
+  @include flex-direction(row);
+  @include align-items(center);
   position: fixed;
   bottom:0;
   left: 0;
   background-color:black;
   z-index: 1000;
   width: 100%;
+  & a {
+    color:white;
+  }
 }

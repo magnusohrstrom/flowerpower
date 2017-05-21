@@ -17,30 +17,32 @@
 /*Mixin for animation on contact page*/
 /*Mixin for hide & show*/
 footer #colophon, #colophon > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   background-color: black;
   z-index: 1000;
   width: 100%; }
-
-h1, h2, h3, h4, h5, a, label, .header-title, .likeP {
-  letter-spacing: 0.15em; }
-
-p {
-  letter-spacing: 0.15em; }
-
-a {
-  text-decoration: none;
-  z-index: 1000; }
-  a:hover {
-    text-decoration: none; }
-
-body {
-  background: #D8D8DA; }
-
-main {
-  margin: 0 3em 0 3em; }
+  footer #colophon a, #colophon > div a {
+    color: white; }
 
 #masthead {
   display: -webkit-box;
@@ -66,8 +68,9 @@ main {
   top: 0;
   height: 100vh;
   width: 12em;
-  background: #8EA5DC;
-  text-align: center; }
+  background: darkgrey;
+  text-align: center;
+  z-index: 900; }
   #masthead #primary-menu > ul {
     display: -webkit-box;
     display: -moz-box;
@@ -83,10 +86,10 @@ main {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: flex-start;
-    -moz-align-items: flex-start;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
     height: 50vh; }
     @media (max-width: 1440px) {
       #masthead #primary-menu > ul {
@@ -104,12 +107,116 @@ main {
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-align-items: flex-start;
-        -moz-align-items: flex-start;
-        -ms-align-items: flex-start;
-        align-items: flex-start; } }
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center; } }
     #masthead #primary-menu > ul a {
       margin: 2em;
-      color: white; }
+      color: black; }
+
+.title-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  height: 3em;
+  top: 40%;
+  left: 0; }
+  .title-header a {
+    color: black;
+    margin: 0 2% 0 2%; }
+
+h1, h2, h3, h4, h5, a, label, .header-title, .likeP {
+  letter-spacing: 0.15em; }
+
+p {
+  letter-spacing: 0.15em; }
+
+a {
+  text-decoration: none;
+  z-index: 1000; }
+  a:hover {
+    text-decoration: none; }
+
+main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: white; }
+
+.hero-figure {
+  z-index: 900;
+  width: 60%;
+  height: auto;
+  margin: 4em 0 0 0; }
+  .hero-figure span {
+    background: white;
+    width: 65%;
+    color: black; }
+    .hero-figure span p {
+      width: 65%; }
+    .hero-figure span h1 {
+      margin: 0 0 3em 0; }
+  .hero-figure img {
+    width: 65%; }
+  .hero-figure:nth-child(5) {
+    margin-left: 7em;
+    text-align: right; }
+    .hero-figure:nth-child(5) h1 {
+      text-align: right; }
+
+.box-1 {
+  width: 85%;
+  height: 60vh;
+  background: #D8D8DA;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1; }
+
+.box-2 {
+  position: fixed;
+  width: 65%;
+  height: 50vh;
+  background: #D8D8DA;
+  bottom: 0;
+  left: 0%; }
+
+.article-content {
+  background: #D8D8DA; }
 
 /*# sourceMappingURL=style.css.map */

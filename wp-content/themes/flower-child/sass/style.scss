@@ -12,6 +12,7 @@
 */
 @import "varmix";
 @import "footer";
+@import "header";
 
 //Typography
 h1,h2,h3,h4,h5, a, label, .header-title, .likeP {
@@ -34,51 +35,67 @@ a {
 
 //Main Elements
 body {
-  background: $grey;
-}
 
+}
+//landing
 main {
-  margin: 0 3em 0 3em;
-  //background: white;
-}
-
-
-
-#masthead {
   @include flexbox();
-  @include justify-content(center);
+  @include justify-content(flex-start);
   @include flex-direction(column);
   @include align-items(center);
-  position: fixed;
-  right:0;
-  top:0;
-  height: 100vh;
-  width: 12em;
-  background: $cobolt;
-  text-align: center;
+  width: 100%;
+  height: auto;
+  background: white;
+}
 
-    & #primary-menu > ul{
-
-      @include breakpoint(xxlarge){
-        @include flexbox();
-        @include justify-content(space-between);
-        @include flex-direction(column);
-        @include align-items(flex-start);
-      };
-      @include flexbox();
-      @include justify-content(space-between);
-      @include flex-direction(column);
-      @include align-items(flex-start);
-        height: 50vh;
-        & a {
-          margin:2em;
-          color: white;
-        }
+.hero-figure{
+  z-index: 900;
+  width: 60%;
+  height: auto;
+  margin: 4em 0 0 0;
+  & span {
+    background:white;
+    width: 65%;
+    & p {width: 65%;}
+    color:black;
+    & h1 {
+      margin: 0 0 3em 0;
+    }
+  }
+  & img {
+    width: 65%;
+  }
+  &:nth-child(5){
+    margin-left: 7em;
+    text-align: right;
+    & h1{
+      text-align: right;
     }
 
+  }
 
 }
 
-#siten-avigation {
+.box-1 {
+  width: 85%;
+  height: 60vh;
+  background:$grey;
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 1;
+}
 
+.box-2 {
+  position: fixed;
+  width: 65%;
+  height: 50vh;
+  background: $grey;
+  bottom: 0;
+  left:0%;
+
+}
+
+.article-content {
+  background: $grey;
 }
