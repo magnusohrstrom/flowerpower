@@ -7,7 +7,7 @@ include 'high.php';
 get_header();
 //1
 ?>
-<main>
+
   <h1><?php the_title(); ?></h1>
   <div class="box-1">
   </div>
@@ -31,5 +31,3 @@ get_header();
 
 
 <?php get_footer(); ?>
-
-</main>

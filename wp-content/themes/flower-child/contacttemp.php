@@ -2,7 +2,7 @@
 /*
   Template Name: contacttemp
 */
-
+include 'error.php';
 get_header();
 ?>
 <main>
@@ -19,9 +19,8 @@ get_header();
   // TO SHOW THE PAGE CONTENTS
     //while (have_posts()) : the_post();
        the_post();
-
        the_content();
-    ?>
+          ?>
 
           <?php //the_content(); ?>
 

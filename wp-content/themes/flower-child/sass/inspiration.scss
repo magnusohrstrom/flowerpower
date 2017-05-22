@@ -1,6 +1,6 @@
 .gallery {
-  width: 90%;
-  
+  width: 100%;
+
   z-index: 1000;
   &#gallery-3{
     @include flexbox();
