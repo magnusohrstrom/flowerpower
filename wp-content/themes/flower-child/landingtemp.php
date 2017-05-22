@@ -17,11 +17,9 @@
  */
 
 get_header();
+
 ?>
 <main>
-  <header class="title-header">
-    <a id="header-1" href="http://localhost:8888/flowerpower/">Flower Power</a>
-  </header>
   <div class="box-1">
   </div>
   <div class="box-2">
@@ -43,3 +41,4 @@ get_header();
   </figure>
 
 </main>
+<?php get_footer(); ?>

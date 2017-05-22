@@ -38,7 +38,7 @@ footer #colophon, #colophon > div {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: black;
+  background-color: grey;
   z-index: 1000;
   width: 100%; }
   footer #colophon a, #colophon > div a {
@@ -68,7 +68,7 @@ footer #colophon, #colophon > div {
   top: 0;
   height: 100vh;
   width: 12em;
-  background: darkgrey;
+  background: grey;
   text-align: center;
   z-index: 900; }
   #masthead #primary-menu > ul {
@@ -113,7 +113,7 @@ footer #colophon, #colophon > div {
         align-items: center; } }
     #masthead #primary-menu > ul a {
       margin: 2em;
-      color: black; }
+      color: white; }
 
 .title-header {
   display: -webkit-box;
@@ -137,11 +137,53 @@ footer #colophon, #colophon > div {
   width: 100%;
   position: fixed;
   height: 3em;
-  top: 40%;
+  top: 0%;
   left: 0; }
   .title-header a {
     color: black;
-    margin: 0 2% 0 2%; }
+    margin: 0 3% 0 4%; }
+
+.gallery {
+  width: 90%;
+  z-index: 1000; }
+  .gallery#gallery-3 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1000; }
+  .gallery figure {
+    margin: 1em;
+    text-align: right; }
+    .gallery figure img {
+      margin: 0;
+      width: 50%; }
+
+#page, #content, #content > ul {
+  z-index: 1000; }
+  #page img, #content img, #content > ul img {
+    z-index: 1000; }
+  #page h1, #page h2, #page h3, #page p, #page a, #content h1, #content h2, #content h3, #content p, #content a, #content > ul h1, #content > ul h2, #content > ul h3, #content > ul p, #content > ul a {
+    z-index: 1000; }
+
+#content {
+  margin: 10%; }
 
 h1, h2, h3, h4, h5, a, label, .header-title, .likeP {
   letter-spacing: 0.15em; }
@@ -176,7 +218,9 @@ main {
   align-items: center;
   width: 100%;
   height: auto;
-  background: white; }
+  z-index: -3; }
+  main h1 {
+    z-index: 1000; }
 
 .hero-figure {
   z-index: 900;
@@ -199,14 +243,16 @@ main {
     .hero-figure:nth-child(5) h1 {
       text-align: right; }
 
+.box-1, .box-2 {
+  z-index: -2; }
+
 .box-1 {
   width: 85%;
   height: 60vh;
   background: #D8D8DA;
   position: fixed;
   top: 0;
-  right: 0;
-  z-index: 1; }
+  right: 0; }
 
 .box-2 {
   position: fixed;
@@ -217,6 +263,7 @@ main {
   left: 0%; }
 
 .article-content {
-  background: #D8D8DA; }
+  background: #D8D8DA;
+  z-index: 1000; }
 
 /*# sourceMappingURL=style.css.map */

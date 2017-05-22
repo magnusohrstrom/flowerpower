@@ -1,0 +1,25 @@
+.gallery {
+  width: 90%;
+  
+  z-index: 1000;
+  &#gallery-3{
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-direction(row);
+    flex-wrap: wrap;
+    @include align-items(center);
+    width: 100%;
+
+    z-index: 1000;
+  }
+  & figure {
+    margin: 1em;
+    text-align: right;
+    & img {
+      margin:0;
+      width: 50%;
+    }
+
+  }
+
+}

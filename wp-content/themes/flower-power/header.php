@@ -44,5 +44,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+	<header class="title-header">
+		<a id="header-1" href="http://localhost:8888/flowerpower/">Flower Power</a>
+	</header>
 	<div id="content" class="site-content">

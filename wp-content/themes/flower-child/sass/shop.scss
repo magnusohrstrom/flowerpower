@@ -1,0 +1,13 @@
+#page, #content, #content > ul{
+  z-index: 1000;
+  & img {
+    z-index: 1000;
+  }
+  & h1, h2, h3, p, a {
+    z-index: 1000;
+  }
+}
+
+#content {
+  margin: 10%;
+}

@@ -13,6 +13,8 @@
 @import "varmix";
 @import "footer";
 @import "header";
+@import "inspiration";
+@import "shop";
 
 //Typography
 h1,h2,h3,h4,h5, a, label, .header-title, .likeP {
@@ -45,7 +47,10 @@ main {
   @include align-items(center);
   width: 100%;
   height: auto;
-  background: white;
+  z-index: -3;
+  & h1 {
+    z-index: 1000;
+  }
 }
 
 .hero-figure{
@@ -75,7 +80,9 @@ main {
   }
 
 }
-
+.box-1, .box-2 {
+  z-index: -2;
+}
 .box-1 {
   width: 85%;
   height: 60vh;
@@ -83,7 +90,7 @@ main {
   position: fixed;
   top:0;
   right: 0;
-  z-index: 1;
+
 }
 
 .box-2 {
@@ -98,4 +105,5 @@ main {
 
 .article-content {
   background: $grey;
+  z-index: 1000;
 }
