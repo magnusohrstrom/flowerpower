@@ -33,22 +33,6 @@ get_header();
   <div class="box-2">
   </div>
 
-
-  <!--<figure class="hero-figure">
-    <span><h1></h1></span>
-    <img src="http://localhost:8888/flowerpower/wp-content/uploads/2017/05/couple.jpg" alt="">
-    <span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
-  </figure>
-  <figure class="hero-figure">
-    <span><h1>We are not over tulips</h1></span>
-    <img src="http://localhost:8888/flowerpower/wp-content/uploads/2017/05/tulips.jpg" alt="">
-    <span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
-  </figure>
-  <figure class="hero-figure">
-    <span><h1>We are not over tulips</h1></span>
-    <img src="http://localhost:8888/flowerpower/wp-content/uploads/2017/05/boq.jpg" alt="">
-    <span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
-  </figure>-->
 </div>
 
 <?php get_footer(); ?>
