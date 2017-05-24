@@ -16,15 +16,11 @@ get_header();
   </div>
   <article class="article-content">
     <?php
-  // TO SHOW THE PAGE CONTENTS
-    //while (have_posts()) : the_post();
+  //TO SHOW THE PAGE CONTENT
        the_post();
        the_content();
-          ?>
+        ?>
 
-          <?php //the_content(); ?>
-
-  <?php //endwhile; ?>
   </article>
 
 <?php get_footer(); ?>

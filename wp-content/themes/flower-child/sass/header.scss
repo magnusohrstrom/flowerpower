@@ -1,7 +1,7 @@
 //side nav.
 #masthead {
   @include flexbox();
-  @include justify-content(center);
+  @include justify-content(flex-start);
   @include flex-direction(column);
   @include align-items(center);
   position: fixed;
@@ -11,15 +11,15 @@
   width: 12em;
   background: $darkgrey;
   text-align: center;
-    z-index: 900;
+  z-index: 900;
 
     & #primary-menu > ul{
 
       @include breakpoint(xxlarge){
-        @include flexbox();
-        @include justify-content(space-between);
-        @include flex-direction(column);
-        @include align-items(center);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include flex-direction(column);
+      @include align-items(center);
       };
       @include flexbox();
       @include justify-content(space-between);
@@ -31,8 +31,6 @@
           color: white;
         }
     }
-
-
 }
 
 #siten-avigation {

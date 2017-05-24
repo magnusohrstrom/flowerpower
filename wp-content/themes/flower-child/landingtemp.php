@@ -26,7 +26,6 @@ get_header();
   <?php the_post();
     the_content();
 
-
   ?>
   <div class="box-1">
   </div>

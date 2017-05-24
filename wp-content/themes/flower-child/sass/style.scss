@@ -18,8 +18,11 @@
 
 //Typography
 h1,h2,h3,h4,h5, a, label, .header-title, .likeP {
-
 letter-spacing: 0.15em;
+}
+
+h1 {
+  margin-bottom:2em;
 }
 
 p{
@@ -53,43 +56,11 @@ body {
   }
 }
 
-/*
-
-.hero-figure{
-  z-index: 900;
-  width: 60%;
-  height: auto;
-  margin: 4em 0 0 0;
-  & span {
-    background:white;
-    width: 65%;
-    & p {width: 65%;}
-    color:black;
-    & h1 {
-      margin: 0 0 3em 0;
-    }
-  }
-  & img {
-    width: 65%;
-  }
-  &:nth-child(5){
-    margin-left: 7em;
-    text-align: right;
-    & h1{
-      text-align: right;
-    }
-
-  }
-
-}
-*/
-
-
 .box-1, .box-2 {
   z-index: -2;
 }
 .box-1 {
-  width: 85%;
+  width: 65%;
   height: 60vh;
   background:$grey;
   position: fixed;
@@ -105,23 +76,52 @@ body {
   background: $grey;
   bottom: 0;
   left:0%;
+}
 
+.box-3 {
+  position: fixed;
+  width: 65%;
+  height: 50vh;
+  background: $plat;
+  bottom: 0;
+  left:60%;
+  z-index: -1;
+}
+
+.box-4 {
+  position: fixed;
+  width: 35%;
+  height: 50vh;
+  background:$plat;
+  top: 0;
+  left:0%;
+  z-index: -1;
 }
 
 .article-content {
-  background: $grey;
+
   z-index: 1000;
 }
 
+
+//Front page content css
 #content > main > p:nth-child(9) > img {
   margin-right: 20em;
 }
 
 #content {
-  margin:17%;
-  width: 100%;
+  margin:10em 0 10em 10em;
+
+  width: 80%;
 }
 #page {
   width: 80%;
   margin:-5% 0 0 -17%;
+}
+
+#content > div > h1:nth-child(12){
+  margin: 3em -10em 0 0;
+}
+#content > div > p:nth-child(13) > img {
+  margin: 0 -30em 0 0;
 }

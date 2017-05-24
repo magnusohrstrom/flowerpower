@@ -35,14 +35,12 @@ footer #colophon, #colophon > div {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  position: fixed;
   bottom: 0;
   left: 0;
-  background-color: grey;
   z-index: 1000;
-  width: 100%; }
+  width: 100vw; }
   footer #colophon a, #colophon > div a {
-    color: white; }
+    color: black; }
 
 #masthead {
   display: -webkit-box;
@@ -50,11 +48,11 @@ footer #colophon, #colophon > div {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
@@ -178,6 +176,18 @@ body > header {
       margin: 0;
       width: 50%; }
 
+h2 {
+  font-size: 2em; }
+
+#page > ul, h2 {
+  margin-left: 17%; }
+  #page > ul a, h2 a {
+    text-decoration: none;
+    color: black; }
+
+#content > h1 {
+  margin-left: 8%; }
+
 #page, #content, #content > ul {
   z-index: 1000; }
   #page img, #content img, #content > ul img {
@@ -185,11 +195,11 @@ body > header {
   #page h1, #page h2, #page h3, #page p, #page a, #content h1, #content h2, #content h3, #content p, #content a, #content > ul h1, #content > ul h2, #content > ul h3, #content > ul p, #content > ul a {
     z-index: 1000; }
 
-#content {
-  margin: 10%; }
-
 h1, h2, h3, h4, h5, a, label, .header-title, .likeP {
   letter-spacing: 0.15em; }
+
+h1 {
+  margin-bottom: 2em; }
 
 p {
   letter-spacing: 0.15em; }
@@ -228,41 +238,11 @@ body {
   .wrapper h1 {
     z-index: 1000; }
 
-/*
-
-.hero-figure{
-  z-index: 900;
-  width: 60%;
-  height: auto;
-  margin: 4em 0 0 0;
-  & span {
-    background:white;
-    width: 65%;
-    & p {width: 65%;}
-    color:black;
-    & h1 {
-      margin: 0 0 3em 0;
-    }
-  }
-  & img {
-    width: 65%;
-  }
-  &:nth-child(5){
-    margin-left: 7em;
-    text-align: right;
-    & h1{
-      text-align: right;
-    }
-
-  }
-
-}
-*/
 .box-1, .box-2 {
   z-index: -2; }
 
 .box-1 {
-  width: 85%;
+  width: 65%;
   height: 60vh;
   background: #D8D8DA;
   position: fixed;
@@ -277,19 +257,42 @@ body {
   bottom: 0;
   left: 0%; }
 
+.box-3 {
+  position: fixed;
+  width: 65%;
+  height: 50vh;
+  background: #E5E9EC;
+  bottom: 0;
+  left: 60%;
+  z-index: -1; }
+
+.box-4 {
+  position: fixed;
+  width: 35%;
+  height: 50vh;
+  background: #E5E9EC;
+  top: 0;
+  left: 0%;
+  z-index: -1; }
+
 .article-content {
-  background: #D8D8DA;
   z-index: 1000; }
 
 #content > main > p:nth-child(9) > img {
   margin-right: 20em; }
 
 #content {
-  margin: 17%;
-  width: 100%; }
+  margin: 10em 0 10em 10em;
+  width: 80%; }
 
 #page {
   width: 80%;
   margin: -5% 0 0 -17%; }
+
+#content > div > h1:nth-child(12) {
+  margin: 3em -10em 0 0; }
+
+#content > div > p:nth-child(13) > img {
+  margin: 0 -30em 0 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,3 +23,17 @@
   }
 
 }
+h2 {
+  font-size: 2em;
+}
+#page > ul, h2 {
+  margin-left: 17%;
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#content > h1 {
+  margin-left: 8%;
+}
